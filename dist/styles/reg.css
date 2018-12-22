@@ -1,0 +1,208 @@
+body, html {
+  width: 100%;
+  height: 100%; }
+
+div.logincontBox {
+  width: 100%;
+  position: relative;
+  margin: 50px 0; }
+
+div.logincontBox div.loginslide .swiper-slide img {
+  width: 100%;
+  height: 600px; }
+
+div.dialog {
+  position: absolute;
+  z-index: 2;
+  top: 280px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #fff;
+  width: 520px;
+  padding: 0 70px;
+  margin: 0 auto; }
+
+div.dialog div.login-view div.login-tab {
+  font: 20px/66px "";
+  height: 66px;
+  border-bottom: 2px solid #333;
+  text-align: center; }
+
+div.dialog div.login-view div.login-tab a.login-active {
+  width: 100%;
+  height: 72px;
+  color: #474c56;
+  height: 70px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+div.dialog div.login-view div.login-tab a.login-active:hover {
+  color: #27d5bf; }
+
+div.dialog div.login-view div.login-main {
+  width: 340px;
+  margin: auto; }
+
+div.dialog div.login-view div.login-main form {
+  width: 340px; }
+
+div.dialog div.login-view div.login-main form .reg-error-tips {
+  margin: 5px 0;
+  height: 35px;
+  line-height: 35px;
+  color: #ff6699; }
+
+div.dialog div.login-view div.login-main form .inner-content {
+  border: solid 1px #e1e1e7;
+  border-radius: 3px;
+  width: 340px; }
+
+div.dialog div.login-view div.login-main form .inner-content .area-code-content {
+  color: #666;
+  width: 100px;
+  position: relative;
+  display: block;
+  float: left;
+  background: url("../images/icon/xia.png") no-repeat;
+  background-position: 98% center;
+  cursor: pointer;
+  z-index: 10;
+  height: 48px;
+  border-right: 0;
+  background-color: #fff; }
+
+div.dialog div.login-view div.login-main form .inner-content .area-code-content .country-name {
+  display: inline-block;
+  width: 98px;
+  line-height: 48px;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center; }
+
+div.dialog div.login-view div.login-main form .inner-content .area-code-content .code-list {
+  display: none;
+  position: absolute;
+  left: -1px;
+  top: 44px;
+  border: solid 1px #ddd;
+  width: 125px;
+  background: #fff;
+  padding: 4px 0;
+  border-radius: 5px; }
+
+div.dialog div.login-view div.login-main form .inner-content .area-code-content .code-list li {
+  height: 27px;
+  line-height: 27px;
+  text-align: left;
+  padding-left: 11px;
+  color: #757575; }
+
+div.dialog div.login-view div.login-main form .inner-content .area-code-content .code-list li:hover {
+  background: #ececec; }
+
+div.dialog div.login-view div.login-main form .inner-content .login-text-long {
+  border: 0;
+  background: none;
+  margin: 15px 0 0 5px;
+  float: right;
+  width: 230px;
+  height: 18px;
+  padding: 10px;
+  line-height: 18px;
+  border: 0;
+  border-left: 1px solid #e1e1e7;
+  box-sizing: border-box; }
+
+div.dialog div.login-view div.login-main form .passybox {
+  border-radius: 3px; }
+
+div.dialog div.login-view div.login-main form .passybox .password {
+  display: block;
+  margin: 30px 0;
+  width: 340px;
+  height: 48px;
+  padding: 10px;
+  line-height: 48px;
+  border: 1px solid #e1e1e7;
+  box-sizing: border-box; }
+
+div.dialog div.login-view div.login-main form .passybox .login-code-wrap {
+  margin-bottom: 30px; }
+
+div.dialog div.login-view div.login-main form .passybox .login-code-wrap .login-text-short {
+  float: left;
+  width: 140px;
+  padding: 10px;
+  line-height: 18px;
+  border: 1px solid #e1e1e7;
+  background-color: #fff;
+  border-radius: 3px; }
+
+div.dialog div.login-view div.login-main form .passybox .login-code-wrap .login-get-code {
+  float: right;
+  border: 0;
+  width: 90px;
+  height: 40px;
+  cursor: pointer;
+  color: #767676;
+  font: 10px "";
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  background-color: #eee; }
+
+div.dialog div.login-view div.login-main form .passybox .login-code-wrap .login-get-code:hover {
+  background-color: #d5d5d5; }
+
+div.dialog div.login-view div.login-main form .passybox .login-code-wrap .yanzhengma {
+  float: left;
+  border: 1px solid #eee;
+  width: 68px;
+  height: 38px;
+  margin-left: 10px;
+  background: #F1F1F1;
+  text-align: center;
+  font: 14px/38px ""; }
+
+div.dialog div.login-view div.login-main form .passybox .reginster-submint {
+  border: 0;
+  width: 100%;
+  font: 18px/40px "";
+  cursor: pointer;
+  background: #eee;
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 3PX;
+  transition: all 0.3s ease; }
+
+div.dialog div.login-view div.login-main form .passybox .reginster-submint:hover {
+  color: #fff;
+  background-color: #333; }
+
+div.dialog div.login-view div.login-main form .passybox .login-fun-wrap {
+  margin-bottom: 30px; }
+
+div.dialog div.login-view div.login-main form .passybox .login-fun-wrap .login-auto {
+  cursor: pointer;
+  color: #999; }
+
+div.dialog div.login-view div.login-main form .passybox .login-fun-wrap .login-auto span .yytai:hover {
+  color: #27d5bf; }
+
+div.dialog .ico_close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 20px;
+  height: 18px;
+  background: url("../images/icon/ico20_1113.png") no-repeat;
+  background-position: 0 -620px;
+  z-index: 2; }
+
+div.dialog .ico_close:hover {
+  background-position: 0 -640px; }

@@ -1,0 +1,219 @@
+@import "mixins";
+body,html{
+    width: 100%;
+    height: 100%;
+}
+    div.logincontBox{
+        width:100%;
+        position: relative;
+        margin: 50px 0 ;
+        div.loginslide{
+            .swiper-slide{
+                img{
+                    width: 100%;
+                    height: 600px;
+                }
+            }
+        }
+    }
+    div.dialog{
+        position: absolute;
+        z-index: 2;
+        top: 280px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: #fff;
+        width: 520px;
+        padding: 0 70px;
+        margin: 0 auto;
+        div.login-view{
+            div.login-tab{
+                font: 20px/66px "";
+                height: 66px;
+                border-bottom: 2px solid #333;
+                text-align: center;
+                a.login-active{
+                    width: 100%;
+                    height: 72px;
+                    color: #474c56;
+                    height: 70px;
+                    @include transition();
+                    //划过时出现这个效果 
+                    &:hover{
+                        color: #27d5bf;
+                    } 
+                } 
+            }
+            div.login-main{
+                width: 340px;
+                margin: auto;
+                form{
+                    width: 340px;
+                    .reg-error-tips{
+                        margin: 5px 0;
+                        height: 35px;
+                        line-height: 35px;
+                        color: #ff6699;
+                    }
+                    .inner-content{
+                         border: solid 1px #e1e1e7;
+                         border-radius: 3px;
+                         width: 340px;
+                        .area-code-content{
+                            color:#666;
+                            width: 100px;
+                            position: relative;
+                            display: block;
+//                          text-align: center;
+                            float: left;
+                            background:url("../images/icon/xia.png") no-repeat;
+                            background-position: 98% center;
+                            cursor: pointer;
+                            z-index: 10;
+                            height: 48px;
+                            border-right: 0;
+                            background-color: #fff;
+                            .country-name{
+                                display: inline-block;
+                                width: 98px;
+                                line-height: 48px;
+                                font-size:12px;
+                                cursor: pointer;
+                                text-align: center;
+                            }
+                            //点击出现下拉框地区
+                            .code-list{
+                                display: none;
+                                position: absolute;
+                                left: -1px;
+                                top: 44px;
+                                border: solid 1px #ddd;
+                                width: 125px;
+                                background: #fff;
+                                padding: 4px 0;
+                                border-radius: 5px;
+                                li{
+                                    height: 27px;
+                                    line-height: 27px;
+                                    text-align: left;
+                                    padding-left: 11px;
+                                    color: rgba(117, 117, 117, 1); 
+                                    &:hover{
+                                       background: #ececec; 
+                                    }
+                                }
+                            }
+                        }
+                        .login-text-long{
+                            border: 0;
+                            background: none;
+                            margin: 15px 0 0 5px;
+                            float: right;
+                            width:230px;
+                            height: 18px;
+                            padding: 10px;
+                            line-height: 18px;
+                            border: 0;
+                            border-left: 1px solid #e1e1e7;
+                            box-sizing:border-box;
+                        }  
+                    }
+                    .passybox{
+                        border-radius: 3px;
+                        .password{
+                           display: block;
+                           margin: 30px 0;
+                            width: 340px;
+                            height: 48px;
+                            padding: 10px;
+                            line-height: 48px;
+                            border: 1px solid #e1e1e7;
+                            box-sizing:border-box;
+                        }  
+                        .login-code-wrap{
+                            margin-bottom: 30px;
+                            .login-text-short{
+                                float: left;
+                                width: 140px;
+                                padding: 10px;
+                                line-height: 18px;
+                                border: 1px solid #e1e1e7;
+                                background-color: #fff;
+                                border-radius: 3px;
+                            }
+                            .login-get-code{
+                                float: right;
+                                border: 0;
+                                width: 90px;
+                                height: 40px;
+                                cursor: pointer;
+                                color: #767676;
+                                font:10px "";
+                                @include colorTransition();
+                                background-color: #eee; 
+                                &:hover{
+                                   background-color: #d5d5d5;
+                                }
+                            }
+                            .yanzhengma{
+                                float: left;  
+                                border:1px solid #eee;
+                                width: 68px;height:38px;
+                                margin-left: 10px;
+                                background:#F1F1F1; 
+                                text-align: center;
+                                font:14px/38px "";
+                            }
+                        }
+                        .reginster-submint{
+                            border: 0;
+                            width: 100%;
+                            font: 18px/40px "";
+                            cursor: pointer;
+                            background:#eee ;
+                            color:#000;
+                            text-align: center;
+                            margin-bottom: 30px;
+                            border-radius: 3PX;
+                            transition: all 0.3s ease;
+                            &:hover{
+                                color: #fff;
+                                background-color: #333; 
+                            }
+                        }
+                        .login-fun-wrap{
+                            margin-bottom: 30px;
+                            .login-auto{
+                                cursor: pointer;
+                                color: #999;
+                                span{
+                                    .yytai{
+                                        &:hover{
+                                            color:#27d5bf;
+                                        }
+                                    }
+                                } 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ico_close{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            width: 20px;
+            height: 18px;
+            background:url("../images/icon/ico20_1113.png") no-repeat;
+            background-position: 0 -620px;
+            z-index: 2;
+            &:hover{
+               //划过出现背景红色的×
+               background-position: 0 -640px;
+           }
+        }
+    } 
+
+

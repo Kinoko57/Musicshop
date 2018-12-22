@@ -1,0 +1,231 @@
+main{
+    div.shadowRim{
+        width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 28px;
+        div.shadow_title{
+            padding: 0 20px;
+            color: #333739;
+            height: 48px;
+            font: 14px/48px ""; 
+            p{
+                letter-spacing: 3px;
+                float: left;
+            }
+            span{
+                float: right;
+                cursor: pointer;
+                color: #1f2122;
+            }
+        }
+        div.typeBox{
+            border: 1px solid #f1f1f1;
+            margin-bottom: 28px;
+            padding: 0 14px;
+            div.selectContain{
+                margin-top: 10px;
+                span.selectTitle{
+                    float: left;
+                    font:700 16px/24px "";
+                    margin-right: 22px;
+                    color: #333739;
+                }
+                ul.selectUL{
+                    width: 1080px;
+                    float: left;
+                    li{
+                        float: left;
+                        font: 12px/24px "";
+                        color: #7C7879;
+                        cursor: pointer;
+                        margin-bottom: 5px;
+                        width: 130px;
+                        height: 24px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+            hr{
+                border: 1px dashed #f1f1f1;
+            }
+        }
+    }
+    div.goods-list-box{
+        width: 100%;
+        background: #f5f5f5;
+        padding: 35px 0 66px;
+        div.centerBox{
+            margin: auto;
+            width: 1160px;
+            overflow: hidden;
+            div.goods_list_title{
+                width: 1180px;
+                padding: 0 10px;
+                margin-bottom: 30px;
+                p.orderP{
+                    float: left;
+                    margin-right: 20px;
+                    color: #9c9d9d;
+                    cursor: pointer;
+                    span{
+                        display: inline-block;
+                        margin-left: 5px;
+                        width: 16px;
+                        height: 16px;
+                        vertical-align: top;
+                        text-align: center;
+                        cursor: pointer; 
+                            background: url(../images/icon/order_icon_v1.png) no-repeat;
+                        background-position: -28px -4px;
+                    } 
+                     span.down{
+                        background: url(../images/icon/order_icon_v1.png) no-repeat; 
+                       background-position: -73px -4px; 
+                    } 
+                }
+                p.choseColor{
+                    color: #ef527f;
+                    span{
+                        background: url(../images/icon/order_icon_v1.png) no-repeat; 
+                       background-position: -5px -4px;   
+                    }
+                }
+                ul.type{
+                    float: left;
+                    overflow: hidden;
+                    margin-left: 160px;
+                    color: #9c9d9d;
+                    li{
+                        float: left;
+                        margin-right: 15px;
+                        cursor: pointer; 
+                        span{
+                            display: inline-block;
+                            margin-right: 6px;
+                            width: 16px;
+                            height: 16px;
+                            background: url(../images/icon/radio.png)no-repeat;
+                            background-position: 0 -54px;
+                            vertical-align: middle;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            div.ulbox{
+                margin: auto;
+                width: 1160px;
+                overflow: hidden;
+                ul.goods_List{
+                    width: 1175px;
+                    li{
+                        position: relative;
+                        float: left;
+                        margin-right:15px;
+                        width: 190px;
+                        height: 300px;
+                        margin-bottom: 10px;
+                        padding: 15px 15px 0px;
+                        background: #fff;
+                        a{
+                            display: block;
+                            img{
+                                width: 190px;
+                                height: 190px;  
+                            }
+                            p.goods-list-name{
+                                height: 45px;
+                                color: #5b5b5b;
+                                font: 14px/22px "";
+                                overflow: hidden;
+                                margin: 10px 0;
+                            }
+                        }
+                        div.goods-list-info{
+                            text-align: center;
+                            p.goods-list-price{
+                                font-size: 14px;
+                                color: #ff447e;
+                                display: inline-block;
+                                margin-right: 10px;
+                            }
+                            p.like{
+                                color: #b3b3b3;
+                                display: inline-block;
+                                span.J_like{
+                                    display: inline-block;
+                                    width: 13px;
+                                    height: 10px;
+                                    background:url(../images/icon/ico.png) no-repeat;
+                                    background-position:0 -72px ;
+                                    cursor: pointer;
+                                    &:hover{
+                                         background-position:-13px -72px ;
+                                    }
+                                }
+                                i.like_num{
+                                    
+                                }
+                            }
+                        }
+                        i.iconfont{
+                            display: none;
+                            position: absolute;
+                            right: 20px;
+                            bottom: 10px;
+                            font:18px "";
+                            width: 20px;
+                            height: 20px;
+                        }
+                        &:hover{
+                            box-shadow:0px 0px 10px #ccc;
+                            i.iconfont{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            div.pageBox{
+                padding: 20px 0;
+                text-align: right;
+                .separator1{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background: #f52a6e;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 30px;
+                    display: inline-block;
+                }
+                ul.page{
+                    display: inline-block;
+                    margin: 0 10px;
+                    li{
+                        display: inline-block;
+                        margin: 0 10px;
+                        color: #461f03;  
+                    }
+                }
+                a.pagebtn{
+                    display: inline-block;
+                    width: 68px;
+                    height: 30px;
+                    border-radius: 10px;
+                    background: #a7a9aa;
+                    color: #fff;
+                    text-align: center;
+                    line-height: 30px;
+                }
+                span.separator{
+                    display: inline-block;
+                    margin-left:10px;
+                    color: #b8b9b9;
+                }
+            }
+        }
+    }
+}
